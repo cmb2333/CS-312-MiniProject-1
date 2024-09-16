@@ -1,9 +1,12 @@
 const express = require('express');
 const router = express.Router();
 
-let posts = []; // This array will store our posts
+// Thanks Express.js - https://expressjs.com/en/guide/routing.html
 
-// Route to display the form
+// Store posts
+let posts = []; 
+
+// Route to display form
 router.get('/posts/new', (req, res) => {
   res.render('posts/new');
 });

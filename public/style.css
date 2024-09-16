@@ -1,11 +1,13 @@
-/* Template on GeeksforGeeks
+/*Sources:
+https://www.w3schools.com/howto/howto_css_blog_layout.asp
+https://www.geeksforgeeks.org/create-a-blog-website-layout-using-html-and-css/
+https://dev.to/5t3ph/style-a-blog-layout-with-css-3elh> */
 
 /* Universal Box Sizing */
 * {
     box-sizing: border-box;
   }
   
-  /* Body Style */
   body {
     font-family: Arial;
     padding: 10px;
@@ -23,13 +25,12 @@
     font-size: 50px;
   }
   
-  /* Style the top navigation bar */
   .topnav {
     overflow: hidden;
     background-color: #333;
   }
   
-  /* Style the topnav links */
+  /* Topnav links */
   .topnav a {
     float: left;
     display: block;
@@ -45,7 +46,7 @@
     color: black;
   }
   
-  /* Column Layout */
+  /* Create two unequal columns that floats next to each other */
   .leftcolumn {   
     float: left;
     width: 75%;
@@ -58,33 +59,40 @@
     padding-left: 20px;
   }
   
-  /* Placeholder for Images */
-  .fakeimg {
+  /* Images */
+  .album-cover, .song-cover {
     background-color: #aaa;
     width: 100%;
     padding: 20px;
   }
   
-  /* Card-like Containers */
+  /* Card Containers */
   .card {
     background-color: white;
     padding: 20px;
     margin-top: 20px;
   }
   
-  /* Clearing Floats */
+  /* Clear floats after the columns */
   .row::after {
     content: "";
     display: table;
     clear: both;
   }
   
-  /* Footer Styling */
   .footer {
     padding: 20px;
     text-align: center;
     background: #ddd;
     margin-top: 20px;
+  }
+
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
   
   /* Responsive Layouts */
