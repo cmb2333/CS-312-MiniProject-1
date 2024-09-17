@@ -1,7 +1,8 @@
 /*Sources:
 https://www.w3schools.com/howto/howto_css_blog_layout.asp
 https://www.geeksforgeeks.org/create-a-blog-website-layout-using-html-and-css/
-https://dev.to/5t3ph/style-a-blog-layout-with-css-3elh> */
+https://dev.to/5t3ph/style-a-blog-layout-with-css-3elh>
+https://www.w3schools.com/css/tryit.asp?filename=trycss_forms */
 
 /* Universal Box Sizing */
 * {
@@ -60,7 +61,7 @@ https://dev.to/5t3ph/style-a-blog-layout-with-css-3elh> */
   }
   
   /* Images */
-  .album-cover, .song-cover {
+  .album-cover, .song-cover, .artist-cover {
     background-color: #aaa;
     width: 100%;
     padding: 20px;
@@ -108,5 +109,38 @@ https://dev.to/5t3ph/style-a-blog-layout-with-css-3elh> */
       float: none;
       width: 100%;
     }
+  }
+
+  /* response forms */
+  input[type="text"], textarea, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  /* General Div Styling (Forms) */
+  form > div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
   }
   

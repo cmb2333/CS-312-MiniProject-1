@@ -1,7 +1,10 @@
 const express = require('express');
 const blogRoutes = require('./routes/blogRoutes');
-
 const app = express();
+const path = require('path');
+
+// Serve static files for images
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Parse URL encoded bodies
 app.set('view engine', 'ejs');
